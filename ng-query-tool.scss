@@ -1,0 +1,60 @@
+@import './compass-mixins/lib/compass';
+
+.rqbFrom {
+	@extend .form-control;
+	margin-bottom: 5px;
+}
+
+.gwt-Button {
+	@extend .btn, .btn-warning;
+}
+
+.rqbComparison {
+	background-color: #FFF !important;
+	border-color: #FFF !important;
+}
+
+#rqb {
+	margin: 5px 0px 5px 0px;
+}
+
+#rqb-sql {
+	max-width: 100%;
+}
+
+#rqb-result {
+	width: 100%;
+	overflow-x: auto;
+	margin-top: 10px;
+}
+
+#raw-sql-container {
+	@include border-radius(4px, 4px);
+	margin: 10px 0px 10px 0px;
+	border-top: 2px solid rgb(197, 197, 197);
+	border-bottom: 2px solid rgb(197, 197, 197);
+	border-right: 2px solid rgb(197, 197, 197);
+}
+
+#rqb-sql-query {
+	font-weight: bold;
+	margin: 5px 0px 5px 0px;
+}
+
+#rqb-show-table-def {
+	vertical-align: top;
+	margin: 0px 0px 4px 5px;
+}
+
+.popover-content table tbody tr td {
+	padding-right: 10px;
+}
+
+.rqbComparison tr td select, .rqbComparison tr td input {
+	margin-right: 3px;
+}
+
+#rqb-saved-queries {
+	margin-top: 25px;
+	text-align: right;
+}
