@@ -13,6 +13,10 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/famfamfam-flags.css">
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="bower_components/ng-query-tool/styles/ng-query-tool.css">
+        <link rel="stylesheet" href="bower_components/ng-table/ng-table.min.css">
+        <link rel="stylesheet" href="bower_components/angular-xeditable/dist/css/xeditable.css">
         <!-- endbuild -->
     </head>
     <body ng-app="ngquerytoolexampleApp" ng-controller="MainController">
@@ -82,6 +86,8 @@
                                     &#xA0;<span translate="global.menu.account.logs">Logs</span></a></li>
                                 <li><a href="#/docs"><span class="glyphicon glyphicon-book"></span>
                                     &#xA0;<span translate="global.menu.account.apidocs">API Docs</span></a></li>
+                                <li><a href="#/query-tool"><span class="fa fa-database"></span>
+                                    &#xA0;<span translate="global.menu.account.querytool">Query Tool</span></a></li>
                             </ul>
                         </li>
                         <li class="dropdown pointer" ng-controller="LanguageController">
@@ -134,6 +140,15 @@
         <script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
         <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
         <script src="bower_components/angular-dynamic-locale/src/tmhDinamicLocale.js"></script>
+        <!--Ng-Query-Tool Deps-->
+        <script src="bower_components/ng-table/ng-table.min.js"></script>
+        <script src="bower_components/ng-table-export/ng-table-export.src.js"></script>
+        <script src="bower_components/angular-xeditable/dist/js/xeditable.min.js"></script>
+        <script src="bower_components/ng-query-tool/scripts/transition/transition.js"></script>
+        <script src="bower_components/ng-query-tool/scripts/transition/transitions.js"></script>
+        <script src="bower_components/ng-query-tool/scripts/redQueryBuilder/RedQueryBuilder.nocache.js"></script>
+        <script src="bower_components/ng-query-tool/scripts/redQueryBuilder/RedQueryBuilderFactory.nocache.js"></script>
+        <script src="bower_components/ng-query-tool/scripts/ng-query-tool.js"></script>
         <script src="scripts/http-auth-interceptor.js"></script>
         <script src="scripts/truncate.js"></script>
         <script src="scripts/utils.js"></script>

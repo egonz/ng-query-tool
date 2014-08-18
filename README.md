@@ -1,26 +1,28 @@
-NG-Query-Tool - AngularJS SQL Query Tool
-========================================
+NG-Query-Tool 
+=============
+
+AngularJS SQL Query Tool
 
 Install
 -------
 
-1. Bower install
+Bower install:
 
 	bower install ng-query-tool --save
 
-2. Include Javascript:
+Include Javascript:
 
 	<script src="bower_components/ng-query-tool/scripts/ng-query-tool.js"></script>
 
-3. Add Angular module:
+Add Angular module:
 
 	angular.module('myApp',['ng-query-tool']);
 
-4. Include the angular directive tag in a view:
+Include the angular directive tag in a view:
 
 	<ng-query-tool></ng-query-tool>
 
-5. Done.
+Done.
 
 
 Create REST services. Or if your backend is Java based, perhaps built with JHipster, skip this step and use the included Java classes. See the section below.
@@ -121,7 +123,7 @@ Search API
 Java Install (optional)
 -----------------------
 
-1. Add jackson to your project dependencies:
+Add jackson to your project dependencies:
 
 	<dependency>
 		<groupId>com.fasterxml.jackson.datatype</groupId>

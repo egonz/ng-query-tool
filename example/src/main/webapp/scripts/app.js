@@ -3,7 +3,9 @@
 /* App Module */
 
 var ngquerytoolexampleApp = angular.module('ngquerytoolexampleApp', ['http-auth-interceptor', 'tmh.dynamicLocale',
-    'ngResource', 'ngRoute', 'ngCookies', 'ngquerytoolexampleAppUtils', 'pascalprecht.translate', 'truncate']);
+    'ngResource', 'ngRoute', 'ngCookies', 'ngquerytoolexampleAppUtils', 'pascalprecht.translate', 'truncate',
+    'ngTable', 'ngTableExport', 
+        'ui.bootstrap', 'xeditable', 'ui.bootstrap.transitions', 'ngQueryTool']);
 
 ngquerytoolexampleApp
     .config(['$routeProvider', '$httpProvider', '$translateProvider',  'tmhDynamicLocaleProvider', 'USER_ROLES',
@@ -97,6 +99,12 @@ ngquerytoolexampleApp
                 })
                 .when('/docs', {
                     templateUrl: 'views/docs.html',
+                    access: {
+                        authorizedRoles: [USER_ROLES.admin]
+                    }
+                })
+                .when('/query-tool', {
+                    templateUrl: 'views/query-tool.html',
                     access: {
                         authorizedRoles: [USER_ROLES.admin]
                     }
