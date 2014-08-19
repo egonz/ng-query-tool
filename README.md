@@ -1,7 +1,7 @@
 NG-Query-Tool 
 =============
 
-AngularJS SQL Query Tool
+AngularJS SQL Query Tool. Utilizing [Red Query Builder](http://redquerybuilder.appspot.com/), [AngularUI Bootstrap](http://angular-ui.github.io/bootstrap/), [NG-Table](https://github.com/esvit/ng-table), and [Angular-xeditable](http://vitalets.github.io/angular-xeditable/).
 
 Install
 -------
@@ -10,13 +10,18 @@ Bower install:
 
 	bower install ng-query-tool --save
 
-Include Javascript:
+Include Javascript library and dependencies:
 
+	<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<script src="bower_components/ng-table/ng-table.min.js"></script>
+	<script src="bower_components/ng-table-export/ng-table-export.src.js"></script>
+	<script src="bower_components/angular-xeditable/dist/js/xeditable.min.js"></script>
 	<script src="bower_components/ng-query-tool/scripts/ng-query-tool.js"></script>
 
 Add Angular module:
 
-	angular.module('myApp',['ng-query-tool']);
+	angular.module('myApp',['ngQueryTool']);
 
 Include the angular directive tag in a view:
 

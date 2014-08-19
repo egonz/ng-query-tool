@@ -4,8 +4,7 @@
 
 var ngquerytoolexampleApp = angular.module('ngquerytoolexampleApp', ['http-auth-interceptor', 'tmh.dynamicLocale',
     'ngResource', 'ngRoute', 'ngCookies', 'ngquerytoolexampleAppUtils', 'pascalprecht.translate', 'truncate',
-    'ngTable', 'ngTableExport', 
-        'ui.bootstrap', 'xeditable', 'ui.bootstrap.transitions', 'ngQueryTool']);
+    'ngQueryTool']);
 
 ngquerytoolexampleApp
     .config(['$routeProvider', '$httpProvider', '$translateProvider',  'tmhDynamicLocaleProvider', 'USER_ROLES',
