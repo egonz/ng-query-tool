@@ -48,7 +48,7 @@ public class NgQueryToolMetaService {
 			meta.setTypes(getTypes());
 			meta.setTables(getTables(dmd));
 		} catch (SQLException e) {
-			log.error("Error getting  database metadata.", e);
+			log.error("Error getting database metadata.", e);
 		} finally {
 			if (conn != null) {
 				try {

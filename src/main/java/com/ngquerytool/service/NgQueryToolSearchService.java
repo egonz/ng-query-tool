@@ -112,7 +112,7 @@ public class NgQueryToolSearchService {
             result.setTotal(count + 1);
             
 		} catch (SQLException e) {
-			log.error("Error getting  database metadata.", e);
+			log.error("Error performing NgQueryTool query.", e);
 		} finally {
 			if (conn != null) {
 				try {

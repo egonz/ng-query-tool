@@ -17,7 +17,7 @@ import com.ngquerytool.web.rest.dto.NgQueryToolMetaDTO;
 import com.ngquerytool.web.rest.dto.NgQueryToolSearchResultDTO;
 
 /**
- * REST controller for getting the audit events.
+ * REST controller for NgQueryTool.
  */
 @RestController
 @RequestMapping("/app")
