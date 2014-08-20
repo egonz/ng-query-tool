@@ -10,6 +10,13 @@ Bower install:
 
 	bower install ng-query-tool --save
 
+Include CSS:
+
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="bower_components/ng-table/ng-table.min.css">
+	<link rel="stylesheet" href="bower_components/angular-xeditable/dist/css/xeditable.css">
+	<link rel="stylesheet" href="bower_components/ng-query-tool/styles/ng-query-tool.css">
+
 Include Javascript library and dependencies:
 
 	<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
@@ -18,13 +25,6 @@ Include Javascript library and dependencies:
 	<script src="bower_components/ng-table-export/ng-table-export.src.js"></script>
 	<script src="bower_components/angular-xeditable/dist/js/xeditable.min.js"></script>
 	<script src="bower_components/ng-query-tool/scripts/ng-query-tool.js"></script>
-
-Include CSS:
-
-	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="bower_components/ng-table/ng-table.min.css">
-	<link rel="stylesheet" href="bower_components/angular-xeditable/dist/css/xeditable.css">
-	<link rel="stylesheet" href="bower_components/ng-query-tool/styles/ng-query-tool.css">
 
 Add Angular module:
 
@@ -37,7 +37,7 @@ Include the angular directive tag in a view:
 Done.
 
 
-Create REST services. Or if your backend is Java based, perhaps built with JHipster, skip this step and use the included Java classes. See the section below.
+Create REST services. Or if your backend is Java based, perhaps built with [JHipster](http://jhipster.github.io/), skip this step and use the included Java classes. See the section below.
 
 Meta API
 
@@ -142,6 +142,10 @@ Add jackson to your project dependencies:
 		<artifactId>jackson-datatype-json-org</artifactId>
 		<version>${jackson.version}</version>
 	</dependency>
+
+Clone the git repo into your base project folder:
+
+	git clone https://github.com/egonz/ng-query-tool
 
 From inside your webapp project directory, copy the ng-query-tool Java classes into your src dir:
 	
