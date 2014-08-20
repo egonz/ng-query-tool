@@ -19,6 +19,13 @@ Include Javascript library and dependencies:
 	<script src="bower_components/angular-xeditable/dist/js/xeditable.min.js"></script>
 	<script src="bower_components/ng-query-tool/scripts/ng-query-tool.js"></script>
 
+Include CSS:
+
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="bower_components/ng-table/ng-table.min.css">
+	<link rel="stylesheet" href="bower_components/angular-xeditable/dist/css/xeditable.css">
+	<link rel="stylesheet" href="bower_components/ng-query-tool/styles/ng-query-tool.css">
+
 Add Angular module:
 
 	angular.module('myApp',['ngQueryTool']);
